@@ -1,0 +1,5 @@
+name: Daves Action Demo
+description: Greet persons
+runs:
+ using: node16
+ main: src/index.js
