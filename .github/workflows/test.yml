@@ -1,8 +1,8 @@
 name: Test Action
 
 on:
-  push:
-    
+  pull-request:
+
 jobs:
   test:
     runs-on: ubuntu-latest
