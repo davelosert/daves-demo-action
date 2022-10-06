@@ -4,6 +4,7 @@
   "description": "Repository for my YouTube Video Series on how to create and released actions.",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf dist && node esbuild.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/davelosert/daves-demo-action#readme",
   "dependencies": {
     "@actions/core": "1.9.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.15.10"
   }
 }
