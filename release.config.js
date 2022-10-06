@@ -6,7 +6,8 @@ const config = {
     ["@semantic-release/git", {
       "assets": ["dist/**/*.{js}"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-    }]
+    }],
+    '@semantic-release/github'
   ]
 };
 
