@@ -1,7 +1,7 @@
 name: Test Action
 
 on:
-  pull-request:
+  pull-requests::
 
 jobs:
   test:
