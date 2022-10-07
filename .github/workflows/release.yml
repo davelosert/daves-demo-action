@@ -3,8 +3,8 @@ name: Release
   
 ## release whenever the rebuild action finished succesfuly
 on:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -27,4 +27,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: Semantic Release
-        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npx semantic-release
+        run: npx semantic-release
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
