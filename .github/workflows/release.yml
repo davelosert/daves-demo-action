@@ -1,7 +1,6 @@
 # release action with semantic release
 name: Release
   
-## release whenever the rebuild action finished succesfuly
 on:
   workflow_dispatch:
 
