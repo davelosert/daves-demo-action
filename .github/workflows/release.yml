@@ -3,8 +3,6 @@ name: Release
   
 ## release whenever the rebuild action finished succesfuly
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
